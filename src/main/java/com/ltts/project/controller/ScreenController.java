@@ -34,8 +34,8 @@ public class ScreenController {
 		System.out.println("***** INSIDE CONTROLLER ****"+s);
 		boolean b=sod.InsertScreen(s);
 		
-		if(b==true) {
-			mv=new ModelAndView("login");
+		if(b==false) {
+			mv=new ModelAndView("booking");
 			model.addAttribute("message","Screen Added Successfully");
 		}
 		else {

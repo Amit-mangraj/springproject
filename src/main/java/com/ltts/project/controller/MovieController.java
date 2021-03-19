@@ -30,13 +30,13 @@ public class MovieController {
 		System.out.println("***** INSIDE CONTROLLER ****"+m);
 		boolean b=mod.InsertMovie(m);
 		
-		if(b==false) {
+		if(b==true) {
 			mv=new ModelAndView("screens");
 			model.addAttribute("message","Movie Addes Successfully");
 		}
 		else {
 			String message = "New user created successfully";
-			mv=new ModelAndView("error");
+			mv=new ModelAndView("screens");
 			model.addAttribute("msg",message );
 			
 		}

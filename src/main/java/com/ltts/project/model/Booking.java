@@ -19,8 +19,8 @@ public class Booking {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private int bookedSeats;
-	private Date date;
-	private Time time;
+	private String date;
+	private String time;
 	private int total;
 	@ManyToOne
 	private Movie movie;
@@ -41,16 +41,16 @@ public class Booking {
 	public void setBookedSeats(int bookedSeats) {
 		this.bookedSeats = bookedSeats;
 	}
-	public Date getDate() {
+	public String getDate() {
 		return date;
 	}
-	public void setDate(Date date) {
+	public void setDate(String date) {
 		this.date = date;
 	}
-	public Time getTime() {
+	public String getTime() {
 		return time;
 	}
-	public void setTime(Time time) {
+	public void setTime(String time) {
 		this.time = time;
 	}
 	public int getTotal() {
@@ -77,16 +77,13 @@ public class Booking {
 	public void setUser(Member user) {
 		this.user = user;
 	}
-	public Booking(int id, int bookedSeats, Date date, Time time, int total, Movie movie, Screen screen, Member user) {
+	public Booking(int id, int bookedSeats, String date, String time, int total) {
 		super();
 		this.id = id;
 		this.bookedSeats = bookedSeats;
 		this.date = date;
 		this.time = time;
 		this.total = total;
-		this.movie = movie;
-		this.screen = screen;
-		this.user = user;
 	}
 	public Booking() {
 		super();

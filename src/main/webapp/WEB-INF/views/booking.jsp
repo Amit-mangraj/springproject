@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/ui-darkness/jquery-ui.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<title>Add movie</title>
+<title>Insert title here</title>
 </head>
 <body class="body" style="background-color: lightblue;">
 <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
@@ -50,36 +50,38 @@
             <div class="card-body">
                 <form autocomplete="off" class="form" role="form" action="addmovie" method="post">
                 <div class="form-group row">
-                        <label class="col-lg-3 col-form-label form-control-label">MovieID</label>
+                        <label class="col-lg-3 col-form-label form-control-label">BookingID</label>
                         <div class="col-lg-9">
-                            <input class="form-control" type="number" name="Mid">
+                            <input class="form-control" type="number" name="Bid">
                         </div>
                     </div>
                  <div class="form-group row">
-                        <label class="col-lg-3 col-form-label form-control-label">MovieName</label>
+                        <label class="col-lg-3 col-form-label form-control-label">bookedSeats</label>
                         <div class="col-lg-9">
-                            <input class="form-control" type="text" name="uname">
+                            <input class="form-control" type="number" name="bseats">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-lg-3 col-form-label form-control-label">Cast</label>
+                        <label class="col-lg-3 col-form-label form-control-label">Date</label>
                         <div class="col-lg-9">
-                            <input class="form-control" type="text" name="cast">
+                            <input class="form-control" type="date" name="date">
                         </div>
                     </div>
                        <div class="form-group row">
-                        <label class="col-lg-3 col-form-label form-control-label">Release Date</label>
+                        <label class="col-lg-3 col-form-label form-control-label">Time</label>
                         <div class="col-lg-9">
-                            <input class="form-control" type="date"  name="Rdate">
+                            <input class="form-control" type="time"  name="time">
                         </div>
+            </div>
                         <div class="form-group row">
-                        <label class="col-lg-3 col-form-label form-control-label">Price</label>
+                        <label class="col-lg-3 col-form-label form-control-label"> Total Price</label>
                         <div class="col-lg-9">
                             <input class="form-control" type="number"  name="price">
                         </div>
-                        </div>
+                       
                     </div>
                     
+                   
                     <div class="form-group row">
                         <label class="col-lg-3 col-form-label form-control-label"></label>
                         <div class="col-lg-9">
